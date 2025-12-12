@@ -13,6 +13,9 @@ authRouter.post('/login', login);
 //Logout
 authRouter.post('/logout',userMiddleware, logout);
 
+//admin
+authRouter.post('/admin/register',adminMiddleware, adminRegister);
+
 //GetProfile
 //authRouter.get('getProfile',getProfile);
 

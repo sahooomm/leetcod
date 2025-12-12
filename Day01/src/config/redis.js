@@ -3,7 +3,7 @@ const redis = require('redis');
 
 const redisclient = redis.createClient({
     username: 'default',
-    password: 'HLd9Fn3b5n9PsJE8AD0i8p1xBhijTBw3',
+    password: process.env.Redis_password,
     socket: {
         host: 'redis-14666.c263.us-east-1-2.ec2.cloud.redislabs.com',
         port: 14666
